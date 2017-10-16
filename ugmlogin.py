@@ -9,15 +9,15 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException
 from config import ugm_username, ugm_password
 
-# ugm_username = "ugm_id"
-# ugm_password = "ugm_password"
-
+# Using ChromeDriver
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--disable-notifications')
-
+chrome_options.add_argument('--headless')
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
-driver.set_window_size(1280, 1000)
+# Using FirefoxDriver
+# driver = webdriver.Firefox()
+
+driver.set_window_size(800, 600)
 driver.get('https://internet.ugm.ac.id/sso/login')
 
 #enter username
