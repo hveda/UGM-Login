@@ -2,7 +2,7 @@
 Automated login for UGM internet using python and selenium.
 
 Require:
-- Python 3.4
+- Python 3.9
 - Selenium
 How to use:
 1. Instal Selenium using pip or run this command
